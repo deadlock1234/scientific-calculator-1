@@ -1,10 +1,9 @@
 package com.example;
-import com.example.Main;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MainTest{
+public class MainTest {
     Main main = new Main();
     double delta = 0.001;
 
