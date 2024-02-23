@@ -1,4 +1,5 @@
 FROM openjdk:11
-COPY ./target/calculator.jar ./
-WORKDIR ./
-CMD ["java","-jar","calculator.jar"]
+
+ADD target/calculator.jar calculator.jar
+
+ENTRYPOINT ["java","-jar","calculator.jar"]
